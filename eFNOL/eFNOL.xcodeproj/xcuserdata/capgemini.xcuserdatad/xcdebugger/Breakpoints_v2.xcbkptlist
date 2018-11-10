@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "eFNOL/Controllers/YourVehicleViewController.swift"
+            timestampString = "563552223.25474"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "collectionView(_:didSelectItemAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "eFNOL.YourVehicleViewController.collectionView(__ObjC.UICollectionView, shouldSelectItemAt: Foundation.IndexPath) -&gt; Swift.Bool"
+                  moduleName = "eFNOL"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/capgemini/Documents/Documents%202/CG-Projects/eFNOL/eFNOL/Controllers/YourVehicleViewController.swift"
+                  timestampString = "563450415.875475"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "290">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "eFNOL.YourVehicleViewController.collectionView(__ObjC.UICollectionView, shouldSelectItemAt: Foundation.IndexPath) -&gt; Swift.Bool"
+                  moduleName = "eFNOL"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/capgemini/Documents/Documents%202/CG-Projects/eFNOL/eFNOL/Controllers/YourVehicleViewController.swift"
+                  timestampString = "563450415.879401"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "1939">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "eFNOL/Controllers/YourVehicleViewController.swift"
+            timestampString = "563552223.254912"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "collectionView(_:didSelectItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
