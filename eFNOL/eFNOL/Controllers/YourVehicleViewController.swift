@@ -12,6 +12,10 @@ class YourVehicleViewController: UIViewController, UICollectionViewDelegate, UIC
     let reuseIdentifierDraft = "VehicleCell"
     let vehiclesArray : [String] = ["AUDI A3 E-TRON PREM P", "TOYOTA AVALON XL XLS TO" , "AUDI A3 E-TRON PREMIU", "AUDI A3 E-TRON PREM P", "TOYOTA AVALON XL XLS TO" , "AUDI A3 E-TRON PREMIU", "AUDI A3 E-TRON PREM P", "TOYOTA AVALON XL XLS TO" , "AUDI A3 E-TRON PREMIU", "AUDI A3 E-TRON PREM P", "TOYOTA AVALON XL XLS TO" , "AUDI A3 E-TRON PREMIU", "AUDI A3 E-TRON PREM P", "TOYOTA AVALON XL XLS TO" , "AUDI A3 E-TRON PREMIU", "AUDI A3 E-TRON PREM P", "TOYOTA AVALON XL XLS TO" , "AUDI A3 E-TRON PREMIU"]
     
+    @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var airbagDeployedSegment: UISegmentedControl!
+    @IBOutlet weak var vehicleParkedSegment: UISegmentedControl!
+    @IBOutlet weak var vehicleDrivableSegment: UISegmentedControl!
     @IBOutlet weak var driverTwoButton: UIButton!
     @IBOutlet weak var driverOneButton: UIButton!
     @IBOutlet weak var someonelseButton: UIButton!

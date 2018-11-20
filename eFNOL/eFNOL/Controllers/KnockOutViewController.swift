@@ -25,6 +25,16 @@ class KnockOutViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        anyoneInjuredSegment.selectedSegmentIndex = -1
+        pedestrianInvolvedSegment.selectedSegmentIndex = -1
+        self.nextButton.isEnabled = false
+        self.nextButton.alpha = 0.5
+        
+        // Do any additional setup after loading the view.
+    }
+    
+    func knockoutButtonsSetup() {
+        
         self.collisionButton.backgroundColor = UIColor.white
         self.collisionButton.setTitleColor(UIColor(red: (23/255.0), green: (134/255.0), blue: (183/255.0), alpha: 1.0), for: .normal)
         self.collisionButton.layer.borderWidth = 0.8
@@ -65,10 +75,7 @@ class KnockOutViewController: UIViewController {
         self.towOnlyButton.setTitleColor(UIColor(red: (23/255.0), green: (134/255.0), blue: (183/255.0), alpha: 1.0), for: .normal)
         self.towOnlyButton.layer.borderWidth = 0.8
         self.towOnlyButton.layer.borderColor = UIColor(red: (23/255.0), green: (134/255.0), blue: (183/255.0), alpha: 1.0).cgColor
-        
-        // Do any additional setup after loading the view.
     }
-    
    
 
     override func didReceiveMemoryWarning() {
@@ -459,8 +466,10 @@ class KnockOutViewController: UIViewController {
 
     }
     @IBAction func pedestrianInvolvedTapped(_ sender: UISegmentedControl) {
+        
     }
     @IBAction func anyOneInjuredTapped(_ sender: UISegmentedControl) {
+        
     }
     /*
     // MARK: - Navigation
