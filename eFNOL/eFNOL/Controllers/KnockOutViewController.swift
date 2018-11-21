@@ -29,6 +29,7 @@ class KnockOutViewController: UIViewController {
         pedestrianInvolvedSegment.selectedSegmentIndex = -1
         self.nextButton.isEnabled = false
         self.nextButton.alpha = 0.5
+        knockoutButtonsSetup()
         
         // Do any additional setup after loading the view.
     }
@@ -467,8 +468,14 @@ class KnockOutViewController: UIViewController {
     }
     @IBAction func pedestrianInvolvedTapped(_ sender: UISegmentedControl) {
         
+        if (sender.selectedSegmentIndex == 0) {
+            self.nextButton.isEnabled = true
+            self.nextButton.alpha = 1.0
+        }
     }
     @IBAction func anyOneInjuredTapped(_ sender: UISegmentedControl) {
+        
+        
         
     }
     /*
