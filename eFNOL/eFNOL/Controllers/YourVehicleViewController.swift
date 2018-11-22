@@ -45,6 +45,10 @@ class YourVehicleViewController: UIViewController, UICollectionViewDelegate, UIC
         self.driverTwoButton.setBackgroundImage(image1, for: .normal)
         self.someonelseButton.setBackgroundImage(image1, for: .normal)
         
+        self.vehicleDrivableSegment.selectedSegmentIndex = -1
+        self.vehicleParkedSegment.selectedSegmentIndex = -1
+        self.airbagDeployedSegment.selectedSegmentIndex = -1
+        
         // Do any additional setup after loading the view.
     }
 

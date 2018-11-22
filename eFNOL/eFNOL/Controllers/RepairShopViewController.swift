@@ -25,7 +25,7 @@ class RepairShopViewController: UIViewController, UITableViewDelegate, UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.haveorNotToggle.selectedSegmentIndex = -1
+        self.haveorNotToggle.selectedSegmentIndex = -1;
         self.alreadyView.isHidden = true
         self.helpMeView.isHidden = true
         
