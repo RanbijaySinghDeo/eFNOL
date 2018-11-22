@@ -16,6 +16,13 @@ class OtherVehiclesViewController: UIViewController, UICollectionViewDataSource,
     @IBOutlet weak var view2: UIView!
     @IBOutlet weak var view1: UIView!
     @IBOutlet weak var skipLabel: UILabel!
+    @IBOutlet weak var buttonOne: UIButton!
+    @IBOutlet weak var buttonTwo: UIButton!
+    @IBOutlet weak var buttonThree: UIButton!
+    @IBOutlet weak var buttonFour: UIButton!
+    @IBOutlet weak var buttonFive: UIButton!
+    @IBOutlet weak var buttonSix: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.otherVehiclesCollectionView.delegate = self
@@ -66,6 +73,77 @@ class OtherVehiclesViewController: UIViewController, UICollectionViewDataSource,
         }
         
     }
+    
+    @IBAction func buttonOneTapped(_ sender: UIButton) {
+        let image1 = UIImage(named: "check-1") as UIImage?
+        let image2 = UIImage(named: "check_yes") as UIImage?
+        
+        self.buttonOne.setBackgroundImage(image2, for: .normal)
+        self.buttonTwo.setBackgroundImage(image1, for: .normal)
+        self.buttonThree.setBackgroundImage(image1, for: .normal)
+        self.buttonFour.setBackgroundImage(image1, for: .normal)
+        self.buttonFive.setBackgroundImage(image1, for: .normal)
+        self.buttonSix.setBackgroundImage(image1, for: .normal)
+        
+        
+    }
+    @IBAction func buttonTwoTapped(_ sender: UIButton) {
+        let image1 = UIImage(named: "check-1") as UIImage?
+        let image2 = UIImage(named: "check_yes") as UIImage?
+        
+        self.buttonOne.setBackgroundImage(image1, for: .normal)
+        self.buttonTwo.setBackgroundImage(image2, for: .normal)
+        self.buttonThree.setBackgroundImage(image1, for: .normal)
+        self.buttonFour.setBackgroundImage(image1, for: .normal)
+        self.buttonFive.setBackgroundImage(image1, for: .normal)
+        self.buttonSix.setBackgroundImage(image1, for: .normal)
+    }
+    @IBAction func buttonThreeTapped(_ sender: UIButton) {
+        let image1 = UIImage(named: "check-1") as UIImage?
+        let image2 = UIImage(named: "check_yes") as UIImage?
+        
+        self.buttonOne.setBackgroundImage(image1, for: .normal)
+        self.buttonTwo.setBackgroundImage(image1, for: .normal)
+        self.buttonThree.setBackgroundImage(image2, for: .normal)
+        self.buttonFour.setBackgroundImage(image1, for: .normal)
+        self.buttonFive.setBackgroundImage(image1, for: .normal)
+        self.buttonSix.setBackgroundImage(image1, for: .normal)
+    }
+    @IBAction func buttonFourTapped(_ sender: UIButton) {
+        let image1 = UIImage(named: "check-1") as UIImage?
+        let image2 = UIImage(named: "check_yes") as UIImage?
+        
+        self.buttonOne.setBackgroundImage(image1, for: .normal)
+        self.buttonTwo.setBackgroundImage(image1, for: .normal)
+        self.buttonThree.setBackgroundImage(image1, for: .normal)
+        self.buttonFour.setBackgroundImage(image2, for: .normal)
+        self.buttonFive.setBackgroundImage(image1, for: .normal)
+        self.buttonSix.setBackgroundImage(image1, for: .normal)
+    }
+    @IBAction func buttonFiveTapped(_ sender: UIButton) {
+        let image1 = UIImage(named: "check-1") as UIImage?
+        let image2 = UIImage(named: "check_yes") as UIImage?
+        
+        self.buttonOne.setBackgroundImage(image1, for: .normal)
+        self.buttonTwo.setBackgroundImage(image1, for: .normal)
+        self.buttonThree.setBackgroundImage(image1, for: .normal)
+        self.buttonFour.setBackgroundImage(image1, for: .normal)
+        self.buttonFive.setBackgroundImage(image2, for: .normal)
+        self.buttonSix.setBackgroundImage(image1, for: .normal)
+    }
+    @IBAction func buttonSixTapped(_ sender: UIButton) {
+        let image1 = UIImage(named: "check-1") as UIImage?
+        let image2 = UIImage(named: "check_yes") as UIImage?
+        
+        self.buttonOne.setBackgroundImage(image1, for: .normal)
+        self.buttonTwo.setBackgroundImage(image1, for: .normal)
+        self.buttonThree.setBackgroundImage(image1, for: .normal)
+        self.buttonFour.setBackgroundImage(image1, for: .normal)
+        self.buttonFive.setBackgroundImage(image1, for: .normal)
+        self.buttonSix.setBackgroundImage(image2, for: .normal)
+    }
+    
+    
     /*
     // MARK: - Navigation
 

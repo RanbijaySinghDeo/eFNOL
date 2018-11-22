@@ -26,6 +26,7 @@ class YourVehicleViewController: UIViewController, UICollectionViewDelegate, UIC
     @IBOutlet weak var undercarraigeButton: UIButton!
     @IBOutlet weak var idontKnowButton: UIButton!
     @IBOutlet weak var everywhereButton: UIButton!
+    var selectedPolicy : String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         self.vehiclesCollectionView.delegate = self
@@ -69,18 +70,12 @@ class YourVehicleViewController: UIViewController, UICollectionViewDelegate, UIC
         
         
     }
-    func collectionView(_ collectionView: UICollectionView,
-                        didSelectItemAt indexPath: IndexPath) {
-        print(indexPath)
-        guard let cell: VehiclesCollectionViewCell = collectionView.cellForItem(at: indexPath) as? VehiclesCollectionViewCell else { return }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.selectedPolicy = vehiclesArray[indexPath.row]
         
-        if (cell.vehicleNamesButton.backgroundColor == .white) {
-            cell.vehicleNamesButton.backgroundColor = UIColor(red: (23/255.0), green: (134/255.0), blue: (183/255.0), alpha: 1.0)
-            cell.vehicleNamesButton.setTitleColor(.white, for: .normal)
-        }
-        collectionView.selectItem(at: indexPath, animated: false, scrollPosition: [])
         
     }
+
     @IBAction func driverOneTapped(_ sender: UIButton) {
         let image1 = UIImage(named: "check-1") as UIImage?
         let image2 = UIImage(named: "check_yes") as UIImage?
@@ -181,6 +176,8 @@ class YourVehicleViewController: UIViewController, UICollectionViewDelegate, UIC
         self.everywhereButton.setBackgroundImage(image1, for: .normal)
         self.idontKnowButton.setBackgroundImage(image2, for: .normal)
     }
+    
+   
     /*
     // MARK: - Navigation
 

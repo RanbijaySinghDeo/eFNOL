@@ -129,7 +129,8 @@ class PolicyInfoViewController: UIViewController,UICollectionViewDelegate,UIColl
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
+        view.endEditing(true)
+        super.touchesBegan(touches, with: event)
         self.datePickerView.isHidden = true
     }
     
@@ -243,6 +244,7 @@ class PolicyInfoViewController: UIViewController,UICollectionViewDelegate,UIColl
         // Action triggered on selection
         amountDropDown.selectionAction = { [weak self] (index, item) in
             self?.incidentLocationTextField.text = item
+            self?.incidentLocationTextField.resignFirstResponder()
             
             if (self?.incidentDateTextField.text != nil && self?.incidentLocationTextField.text != nil) {
                 self?.draftCollectionView.isHidden = false
